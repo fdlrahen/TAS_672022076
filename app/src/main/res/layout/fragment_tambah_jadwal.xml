@@ -43,6 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Masukkan Hari"
+                    android:textColor="@color/black"
                     android:layout_marginBottom="12dp" />
 
                 <EditText
@@ -50,6 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Pilih Jam"
+                    android:textColor="@color/black"
                     android:focusable="false"
                     android:layout_marginBottom="12dp" />
 
@@ -58,18 +60,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Masukkan Ruangan"
+                    android:textColor="@color/black"
                     android:layout_marginBottom="12dp" />
 
                 <Spinner
                     android:id="@+id/spinnerMatkul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:layout_marginBottom="12dp" />
 
                 <Spinner
                     android:id="@+id/spinnerDosen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:layout_marginBottom="12dp" />
 
                 <EditText
@@ -77,6 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Pilih Mahasiswa"
+                    android:textColor="@color/black"
                     android:focusable="false"
                     android:layout_marginBottom="20dp" />
 
