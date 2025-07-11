@@ -1,0 +1,64 @@
+{
+  "dosen": {
+    "dosenA": {
+      "nama": "Dosen A"
+    },
+    "dosenB": {
+      "nama": "Dosen B"
+    },
+    "dosenC": {
+      "nama": "Dosen C"
+    }
+  },
+  "jadwal": {
+    "-OUthdweshxhP6iyEjoM": {
+      "hari": "selasa",
+      "jam": "20:39 - 10:39",
+      "kodeMatkul": "IF101",
+      "mahasiswa": [
+        "11223 - Mahasiswa C",
+        "12345 - Mahasiswa A"
+      ],
+      "namaDosen": "Dosen A",
+      "namaMatkul": "Pemrograman Dasar",
+      "ruangan": "c"
+    }
+  },
+  "mahasiswa": {
+    "11223": {
+      "nim": "11223",
+      "username": "Mahasiswa C"
+    },
+    "12345": {
+      "nim": "12345",
+      "username": "Mahasiswa A"
+    },
+    "67890": {
+      "nim": "67890",
+      "username": "Mahasiswa B"
+    }
+  },
+  "matakuliah": {
+    "IF101": {
+      "kode": "IF101",
+      "nama": "Pemrograman Dasar",
+      "sks": "2 SKS"
+    },
+    "IF202": {
+      "kode": "IF202",
+      "nama": "Struktur Data",
+      "sks": "3 SKS"
+    }
+  },
+  "nilai": {
+    "12345_-_Mahasiswa_A": {
+      "IF101": {
+        "kodeMatkul": "IF101",
+        "namaDosen": "Dosen A",
+        "namaMahasiswa": "12345 - Mahasiswa A",
+        "namaMatkul": "Pemrograman Dasar",
+        "nilai": "A"
+      }
+    }
+  }
+}
