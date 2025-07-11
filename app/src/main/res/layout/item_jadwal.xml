@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Kode + Nama Matkul -->
+    <TextView
+        android:id="@+id/txtMatkul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="IF101 - Pemrograman Dasar"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Dosen -->
+    <TextView
+        android:id="@+id/txtDosen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dosen: Dosen A"
+        app:layout_constraintTop_toBottomOf="@id/txtMatkul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Hari + Jam -->
+    <TextView
+        android:id="@+id/txtHariJam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Senin, 07.00 - 10.00"
+        app:layout_constraintTop_toBottomOf="@id/txtDosen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Ruangan -->
+    <TextView
+        android:id="@+id/txtRuangan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ruangan: Lab 1"
+        app:layout_constraintTop_toBottomOf="@id/txtHariJam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Daftar Mahasiswa -->
+    <TextView
+        android:id="@+id/txtMahasiswa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mahasiswa: Mahasiswa A, Mahasiswa B"
+        app:layout_constraintTop_toBottomOf="@id/txtRuangan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Edit -->
+    <TextView
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@id/txtMahasiswa"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tombol Hapus -->
+    <TextView
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintTop_toBottomOf="@id/txtMahasiswa"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

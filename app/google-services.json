@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "669944196787",
+    "project_id": "myapplication-c53b1",
+    "storage_bucket": "myapplication-c53b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669944196787:android:d71023941d7899f5260ac6",
+        "android_client_info": {
+          "package_name": "com.diva.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAwdKnJP5z1rWGAvhDF0NVWgYm5xc-P0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

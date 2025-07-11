@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtHari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hari"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtJam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jam (misal: 08:00 - 10:00)"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/edtRuangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ruangan"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtMahasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Daftar Mahasiswa"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:enabled="false"
+            android:background="@android:color/transparent" />
+
+        <Spinner
+            android:id="@+id/spinnerDosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btnUpdateJadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Jadwal"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
