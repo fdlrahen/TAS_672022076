@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="IF101 - Pemrograman Dasar"
         android:textStyle="bold"
+        android:textColor="@android:color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -23,6 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Dosen: Dosen A"
+        android:textColor="@android:color/black"
         app:layout_constraintTop_toBottomOf="@id/txtMatkul"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -34,6 +36,7 @@
         android:layout_height="wrap_content"
         android:text="Senin, 07.00 - 10.00"
         app:layout_constraintTop_toBottomOf="@id/txtDosen"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -43,6 +46,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Ruangan: Lab 1"
+        android:textColor="@android:color/black"
         app:layout_constraintTop_toBottomOf="@id/txtHariJam"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -53,6 +57,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Mahasiswa: Mahasiswa A, Mahasiswa B"
+        android:textColor="@android:color/black"
         app:layout_constraintTop_toBottomOf="@id/txtRuangan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
