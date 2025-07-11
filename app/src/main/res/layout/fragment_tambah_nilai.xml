@@ -1,64 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#F5F5F5"
     android:padding="16dp"
     tools:context=".dosen.TambahNilaiFragment">
 
     <TextView
+        android:id="@+id/tvFormTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Form Tambah Nilai"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:layout_marginBottom="24dp"
-        android:layout_gravity="center_horizontal"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Pilih Mata Kuliah"
-        android:textStyle="bold" />
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvFormTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Spinner
-        android:id="@+id/spinner_matkul_nilai"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pilih Mahasiswa"
-        android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Mata Kuliah"
+                android:textStyle="bold"
+                android:textColor="#333333" />
 
-    <Spinner
-        android:id="@+id/spinner_mahasiswa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+            <Spinner
+                android:id="@+id/spinner_matkul_nilai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nilai"
-        android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Mahasiswa"
+                android:textStyle="bold"
+                android:textColor="#333333" />
 
-    <EditText
-        android:id="@+id/edt_nilai"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan Nilai (contoh: A, B, C)"
-        android:inputType="textCapCharacters"
-        android:maxLength="1"
-        android:layout_marginBottom="24dp"/>
+            <Spinner
+                android:id="@+id/spinner_mahasiswa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/btn_simpan_nilai"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Simpan Nilai"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai"
+                android:textStyle="bold"
+                android:textColor="#333333" />
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/edt_nilai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nilai (contoh: A, B, C)"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_simpan_nilai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan Nilai"
+                app:cornerRadius="12dp"
+                app:backgroundTint="#2196F3"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
